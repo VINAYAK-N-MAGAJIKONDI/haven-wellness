@@ -1,0 +1,29 @@
+{
+  "name": "haven-mental-wellness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zero-Cost AI-Powered Mental Wellness Web Platform on Cloudflare Pages and Workers with Gemini API",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "test": "npm run test --workspace=backend",
+    "eval": "node evals/safety_eval.js"
+  },
+  "keywords": [
+    "mental-wellness",
+    "gemini-api",
+    "cloudflare-workers",
+    "cloudflare-d1",
+    "nextjs",
+    "react",
+    "tailwind"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT"
+}

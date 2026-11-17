@@ -1,0 +1,14 @@
+name = "haven-backend"
+main = "src/index.ts"
+compatibility_date = "2024-11-12"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+GEMINI_MODEL = "gemini-1.5-flash"
+ENVIRONMENT = "development"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "haven_wellness_db"
+database_id = "local-d1-haven-id"
+migrations_dir = "../migrations"
